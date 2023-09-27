@@ -11,10 +11,19 @@
 # 10
 
     
+def abs (v):
+    if v < 0:
+        return -v
+    return v      
 
+def str_to_int_list (str):
+    arr = str.split (' ')
+    for i in range(len(arr)):
+        arr[i] = int(arr[i])
+    return arr
     
 
-list_1 = str_to_int_list (input("Задайте список: "))
+list_1 = str_to_int_list(input("Задайте список: "))
 
 k = int(input("Ввдите цифру, которую нужно сравнить с элементами списка: "))
 
@@ -32,14 +41,5 @@ for i in range (len(list_1)):
         min_index = i
 print(list_1[min_index])
 
-def abs (v):
-    if v < 0:
-        return -v
-    return v      
 
-def str_to_int_list (str):
-    arr = str.split (' ')
-    for i in range(len(arr)):
-        arr[i] = int(arr[i])
-    return arr
     
