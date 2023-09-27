@@ -16,7 +16,7 @@ def str_to_int_list (str):
     return arr
 
 
-ar = str_to_int_list1(input("Задайте список: "))
+ar = str_to_int_list(input("Задайте список: "))
 min = int(input("Введите левую границу диапазона: "))
 max = int(input("Введите правую границу диапазона: "))
 print(select(ar, min, max))
