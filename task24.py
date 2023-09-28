@@ -10,3 +10,30 @@
 # у каждого куста только два соседних
 # N- количество кустов на грядке
 # на i-ом кусте выросло ai ягод
+
+# n = int(input('Введите количество кустов на грядке: '))
+# a = list(input('Введите через пробел количество ягод на каждом кусте: '))
+
+# for i in range(len(a)):
+#     a[i] = int(a[i])
+
+# for i in range (n):
+#     maxx = 0
+#     sum = a[i]+a[i-1]+a[i-2]
+#     if a[i]+a[i-1]+a[i-2]>maxx:
+#         sum = maxx
+# print(maxx)
+
+
+
+n = int(input('Введите количество кустов на грядке: '))
+lst_a= list()
+for i in range(n):
+    a = int(input('Введите количество ягод на кусте: '))
+    lst_a.append(a)
+
+lst_collected = list()
+for i in range(len(lst_a)):
+       lst_collected.append(lst_a[i-2] + lst_a[i-1] + lst_a[i])
+print(max(lst_collected))
+
